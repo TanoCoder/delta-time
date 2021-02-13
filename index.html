@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Importance of Delta Time in Video Games!</title>
+  <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <h1>IMPORTANCE OF DELTA TIME IN VIDEO GAMES!</h1>  
+  <h2>Frames Per Second in this web browser is : <span id="browserFps" class="green"></span></h2>
+   
+  <div class="display_flex_row">
+    <div class="without_dt">
+      <h2>Test <span class="red">without <span class="not_in">Delta Time</span></span></h2>
+      <p>speed = <input type="text" id="speed"> (nb pixel by frame)</p>             
+      <p>Movement formula: x = x + speed</p>
+      <h3>240 FPS (1 frame every 4,16 ms)<span class="black"> | Duration: <span id="durationNoDt240"></span></span></h3>
+      <canvas id="canvas_240_no_dt" width="500" height="80">  
+        Votre navigateur ne supporte pas Canvas :(
+      </canvas>
+      <h3>60 FPS (1 frame every 16,66 ms)<span class="black">Duration: <span id="durationNoDt60"></span></span></h3>
+      <canvas id="canvas_60_no_dt" width="500" height="80">  
+        Votre navigateur ne supporte pas Canvas :(
+      </canvas>
+      <h3>30 FPS (1 frame every 33,33 ms)<span class="black">Duration: <span id="durationNoDt30"></span></span></h3>
+      <canvas id="canvas_30_no_dt" width="500" height="80">  
+        Votre navigateur ne supporte pas Canvas :(
+      </canvas>         
+    </div>
+
+    <div class="with_dt green">
+      <h2>Test with delta time</h2>    
+      <p class="black">speed based on dt = <input type="text" id="speedBasedOnDt"> (nb pixel by second)</p>             
+      <p class="black">Movement formula: x = x + speedBasedOnDt * dt</p>                  
+      <h3><span class="small">( POINT 'A' is 20 ) </span> 240 FPS <span class="black">Duration: <span id="durationDt240"></span></span><span class="small"> ( POINT 'B' is 480 )</span> </h3>
+      <canvas id="canvas_240_with_dt" width="500" height="80">  
+        Votre navigateur ne supporte pas Canvas :(
+      </canvas>
+      <h3>60 FPS <span class="black">Duration: <span id="durationDt60"></span></span></h3>
+      <canvas id="canvas_60_with_dt" width="500" height="80">  
+        Votre navigateur ne supporte pas Canvas :(
+      </canvas>
+      <h3>30 FPS <span class="black">Duration: <span id="durationDt30"></span></span></h3>
+      <canvas id="canvas_30_with_dt" width="500" height="80">  
+        Votre navigateur ne supporte pas Canvas :(
+      </canvas>  
+    </div>
+  </div>  
+  
+  <div class="display_flex_row">
+    
+    <div id="div_run_left" class="btn_run_left">
+      <h3 id="runLeft">RUN LEFT</h3>
+    </div>
+
+    <div id="div_reset" class="btn_reset">
+      <h3 id="reset">INIT POS</h3>
+    </div>
+    
+    <div id="div_run" class="btn_run">
+      <h3 id="run">RUN ALL</h3>
+    </div>
+
+    <div id="div_run_right" class="btn_run_right">
+      <h3 id="runRight">RUN RIGHT</h3>
+    </div>
+    
+  </div>
+   
+  <script src="./assets/js/game.js"></script>
+
+</body>
+</html>

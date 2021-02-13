@@ -1,0 +1,252 @@
+body {
+  width: 98%;
+  margin: auto;
+}
+
+.not_in {
+  text-decoration: line-through;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+  padding: 0%;
+  margin-top: 0%;
+  margin-right: 0%;
+  margin-left: 0%;
+  margin-bottom: 12px;
+}
+
+.small {
+  font-size: small;
+  color: black;
+}
+
+.black {
+  color: black;
+}
+
+#speed, #speedBasedOnDt {
+  width: 8%;
+}
+
+h1 {
+  color: #82210c;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.display_flex_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#canvas_240_no_dt {
+  width: 90%;
+  background: black;
+}
+
+#canvas_60_no_dt {
+  width: 90%;
+  background: black;
+}
+
+#canvas_30_no_dt {
+  width: 90%;
+  background: black;
+}
+
+#canvas_240_with_dt {
+  width: 90%;
+  background: black;
+}
+
+#canvas_60_with_dt {
+  width: 90%;
+  background: black;
+}
+
+#canvas_30_with_dt {
+  width: 90%;
+  background: black;
+}
+
+.without_dt {
+  border: 1px solid black;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.with_dt {
+  border: 1px solid black;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn_run_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 9%;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: orange;
+  color: black;
+  text-align: center;
+}
+
+#div_run_left {
+  font-size: 1rem;
+  color: red;
+  padding: 2px, 4px, 2px, 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn_run_left:hover {
+  cursor: pointer;
+}
+
+.btn_run {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 9%;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: yellowgreen;
+  color: black;
+  text-align: center;
+}
+
+#div_run {
+  font-size: 1rem;
+  color: red;
+  padding: 2px, 4px, 2px, 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn_run:hover {
+  cursor: pointer;
+}
+
+.btn_run_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 9%;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: orange;
+  color: black;
+  text-align: center;
+}
+
+#div_run_right {
+  font-size: 1rem;
+  color: red;
+  padding: 2px, 4px, 2px, 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn_run_right:hover {
+  cursor: pointer;
+}
+
+.btn_reset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 9%;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: blue;
+  color: black;
+  text-align: center;
+}
+
+#div_reset {
+  padding: 2px 4px 2px 4px;
+  font-size: 1rem;
+  color: red;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn_reset:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
