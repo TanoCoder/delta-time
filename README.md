@@ -8,5 +8,9 @@ especially now that we know frame rates could vary in our own computer and from 
 
 Instead it would be nice to think of velocity in terms of pixels per second, or pixels per unit of time.
 
+Demo
+https://gaetano-di-salvo.github.io/delta-time/
+
+
 
 
